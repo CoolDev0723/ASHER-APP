@@ -19,12 +19,6 @@ const app = createApp({
 
         count: 0,
         input1: '',
-        workers: [
-            { name: "Airi Satou", position: "Accountant", office: "Tokyo", age: 33},
-            { name: "Angelica Ramos", position: "Chief Executive Officer (CEO)", office: "London", age: 47 },
-            { name: "Cedric Kelly", position: "Senior Javascript Developer", office: "Edinburgh", age: 22 },
-            { name: "Jennifer Chang", position: "Regional Director", office: "Singapore", age: 28 },
-        ],
         items: [
             {
               name: 'African Elephant',

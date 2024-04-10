@@ -75,24 +75,6 @@
                         <label for="input1">This is sent to Node-RED when you exit it: </label>
                         <input v-model="input1" @change="doEvent" id="input1" type="text" placeholder="Type text then exit field">
                     </p> -->
-                    <!-- <table>
-                        <thead>
-                            <tr>
-                                <th class="text-left">Name</th>
-                                <th class="text-left">Position</th>
-                                <th class="text-left">Office</th>
-                                <th class="text-left">Age</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="worker in workers">
-                                <td>{{worker.name}}</td>
-                                <td>{{worker.position}}</td>
-                                <td>{{worker.office}}</td>
-                                <td>{{worker.age}}</td>
-                            </tr>
-                        </tbody>
-                    </table> -->
                     <v-data-table :items="items"></v-data-table>
 
                     <div id="more"><!-- '#more' is used as a parent for dynamic content in examples --></div>
