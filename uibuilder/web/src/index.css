@@ -15,13 +15,15 @@
 }
 .page-title {
     background-color: #4894EC;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
     color: white;
+    height: 3rem;
 }
 .page-content {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 3rem);
 }
 .menu-section {
     width: 20%;
@@ -45,12 +47,13 @@
     margin-bottom: 1rem;
     color: white;
 }
-table {
-    background-color: #424242;
-}
 #more {
     color: white;
 }
 #more form {
     margin: 0;
+}
+table th, td {
+    background: black !important;
+    color: white !important;
 }

@@ -497,7 +497,7 @@
         "reload": false,
         "sourceFolder": "src",
         "deployedVersion": "6.8.2",
-        "showMsgUib": true,
+        "showMsgUib": false,
         "title": "",
         "descr": "",
         "x": 630,
