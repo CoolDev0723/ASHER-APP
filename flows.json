@@ -40,7 +40,7 @@
         "id": "baaec2daa71931dc",
         "type": "uibuilder",
         "z": "75f12c4481dd5390",
-        "name": "dashboard",
+        "name": "",
         "topic": "",
         "url": "web",
         "okToGo": true,
@@ -57,7 +57,7 @@
         "showMsgUib": true,
         "title": "",
         "descr": "",
-        "x": 670,
+        "x": 630,
         "y": 360,
         "wires": [
             [

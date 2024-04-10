@@ -1,1 +1,195 @@
-[]
+[
+    {
+        "id": "75f12c4481dd5390",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "24f977a4f4d5a994",
+        "type": "inject",
+        "z": "75f12c4481dd5390",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"count\":\"9\",\"key2\":\"value2\"}",
+        "payloadType": "json",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "baaec2daa71931dc"
+            ]
+        ]
+    },
+    {
+        "id": "baaec2daa71931dc",
+        "type": "uibuilder",
+        "z": "75f12c4481dd5390",
+        "name": "dashboard",
+        "topic": "",
+        "url": "web",
+        "okToGo": true,
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "iife-vue3-nobuild",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "deployedVersion": "6.8.2",
+        "showMsgUib": true,
+        "title": "",
+        "descr": "",
+        "x": 670,
+        "y": 360,
+        "wires": [
+            [
+                "d308c7b35d7db739"
+            ],
+            [
+                "d16f695dd5a0b483"
+            ]
+        ]
+    },
+    {
+        "id": "d308c7b35d7db739",
+        "type": "debug",
+        "z": "75f12c4481dd5390",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "counter",
+        "x": 975,
+        "y": 280,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "6552d9a32379c1de",
+        "type": "uib-element",
+        "z": "75f12c4481dd5390",
+        "name": "",
+        "topic": "",
+        "elementtype": "sform",
+        "parent": "#more",
+        "parentSource": "",
+        "parentSourceType": "str",
+        "elementid": "",
+        "elementId": "",
+        "elementIdSourceType": "str",
+        "heading": "",
+        "headingSourceType": "str",
+        "headingLevel": "h2",
+        "data": "payload",
+        "dataSourceType": "msg",
+        "position": "last",
+        "positionSourceType": "str",
+        "passthrough": false,
+        "confData": {},
+        "x": 710,
+        "y": 540,
+        "wires": [
+            [
+                "bc8e97e6f6d12b7e"
+            ]
+        ]
+    },
+    {
+        "id": "bc8e97e6f6d12b7e",
+        "type": "link out",
+        "z": "75f12c4481dd5390",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "d3ec544893400cac"
+        ],
+        "x": 945,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8f26e97566163984",
+        "type": "inject",
+        "z": "75f12c4481dd5390",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"id\":\"r1\",\"type\":\"text\",\"required\":false,\"label\":\"Text Input\",\"value\":\"Foo\"},{\"id\":\"r2\",\"type\":\"color\",\"required\":false,\"label\":\"Colour\",\"value\":\"#427798\"},{\"id\":\"r3\",\"type\":\"date\",\"required\":true,\"label\":\"Date\"},{\"id\":\"r4\",\"type\":\"range\",\"required\":false,\"label\":\"Range (0-100):\",\"value\":20,\"min\":0,\"max\":100},{\"id\":\"r5\",\"type\":\"button\",\"label\":\"Send to Node-Red\",\"value\":\"Butthons can have values as well\"}]",
+        "payloadType": "json",
+        "x": 450,
+        "y": 540,
+        "wires": [
+            [
+                "6552d9a32379c1de"
+            ]
+        ]
+    },
+    {
+        "id": "d3ec544893400cac",
+        "type": "link in",
+        "z": "75f12c4481dd5390",
+        "name": "link in 1",
+        "links": [
+            "bc8e97e6f6d12b7e"
+        ],
+        "x": 405,
+        "y": 340,
+        "wires": [
+            [
+                "baaec2daa71931dc"
+            ]
+        ]
+    },
+    {
+        "id": "d16f695dd5a0b483",
+        "type": "debug",
+        "z": "75f12c4481dd5390",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "counter",
+        "x": 975,
+        "y": 420,
+        "wires": [],
+        "l": false
+    }
+]
