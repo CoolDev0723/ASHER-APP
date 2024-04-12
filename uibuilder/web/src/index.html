@@ -54,31 +54,6 @@
 								v-model="color"
 								@change="handleColorChange"
 							></v-color-picker>
-							<v-menu
-								v-model="showPicker"
-								:close-on-content-click="false"
-								transition="scale-transition"
-								offset-y
-								full-width
-								max-width="290px"
-								min-width="290px"
-								>
-									<template v-slot:activator="{ on }">
-										<v-text-field
-											v-model="selectedDate"
-											label="Choose the date"
-											hint="YYYY/MM/DD"
-											persistent-hint
-											readonly
-											v-on="on"
-										></v-text-field>
-									</template>
-									<v-date-picker
-										v-model="selectedDate"
-										no-title
-										@input="showPicker = false"
-									></v-date-picker>
-							</v-menu>
 							<!-- <v-date-picker v-model="selectedDate" @input="handleDateChange"></v-date-picker> -->
 							<v-slider label="Range (0-100):" v-model="selectedRange" :min="0" :max="100"></v-slider>
 							<v-btn 
