@@ -14,13 +14,15 @@
   "uibuilder": {
     "packages": {
       "vue": {
-        "installFolder": "\\Users\\migel\\.node-red\\projects\\ASHER-APP\\uibuilder\\node_modules\\vue",
+        "spec": "^3.4.21",
+        "installFolder": "C:\\Users\\migel\\.node-red\\projects\\ASHER-APP\\uibuilder\\node_modules\\vue",
         "installedVersion": "3.4.21",
-        "estimatedEntryPoint": "dist/vue.global.js",
-        "homepage": "https://github.com/vuejs/core/tree/main/packages/vue#readme",
+        "estimatedEntryPoint": "?",
+        "homepage": "https://www.npmjs.com/search?q=vue",
         "packageUrl": "/vue",
-        "url": "../uibuilder/vendor/vue/dist/vue.global.js",
-        "spec": "^3.4.21"
+        "url": "../uibuilder/vendor/vue/?",
+        "installedFrom": "npm",
+        "outdated": {}
       }
     }
   }
