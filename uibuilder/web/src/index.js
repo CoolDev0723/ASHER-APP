@@ -1,7 +1,7 @@
 // @ts-nocheck
 'use strict'
 
-const { createApp } = Vue
+const { createApp, ref, computed } = Vue
 const { createVuetify } = Vuetify
 
 const vuetify = createVuetify({
@@ -10,6 +10,24 @@ const vuetify = createVuetify({
 		defaultTheme: 'dark'
 	}
 })
+
+const menu = ref(false);
+const date = ref(null);
+
+const toggleMenu = () => {
+	menu.value = !menu.value;
+};
+
+
+const activatorHeight = ref(null);
+
+const menuTop = computed(() => {
+	if (activatorHeight.value && menu.value) {
+		return `${activatorHeight.value}px`;
+	} else {
+		return null;
+	}
+});
 
 const app = createApp({
 	data() { return {
@@ -52,7 +70,13 @@ const app = createApp({
 		color:"",
 		showPicker: false,
 		selectedDate: null,
-		selectedRange: 0
+		selectedRange: 0,
+
+		menu,
+		date,
+		toggleMenu,
+
+		activatorHeight
 	} },
 
 	// Dynamic data
@@ -72,15 +96,12 @@ const app = createApp({
     handleColorChange(event) {
 			this.color = event.target.value
 		},
-		// handleDateChange(newDate) {
-		// 	this.selectedDate = newDate
-		// 	console.log("selectedDate", this.selectedDate)
-		// },
 		submitEvent: (text, color, range) => {
 			uibuilder.send({
 				payload:JSON.stringify({
 					text: text,
 					color: color,
+					date: date,
 					range: range,
 				})}
 			)

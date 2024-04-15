@@ -4,7 +4,9 @@
   "description": "Root configuration and data folder for uibuilder",
   "scripts": {},
   "dependencies": {
-    "vue": "^3.4.21"
+    "@mdi/font": "^7.4.47",
+    "vue": "^3.4.21",
+    "vuetify": "^3.5.15"
   },
   "homepage": "",
   "bugs": "",
@@ -13,6 +15,18 @@
   "repository": "",
   "uibuilder": {
     "packages": {
+      "@mdi/font": {
+        "spec": "^7.4.47",
+        "installFolder": "C:\\Users\\migel\\.node-red\\projects\\ASHER-APP\\uibuilder\\node_modules\\@mdi\\font",
+        "installedVersion": "7.4.47",
+        "estimatedEntryPoint": "?",
+        "homepage": "https://www.npmjs.com/search?q=@mdi/font",
+        "packageUrl": "/@mdi/font",
+        "url": "../uibuilder/vendor/@mdi/font/?",
+        "scope": "@mdi/font",
+        "installedFrom": "npm",
+        "outdated": {}
+      },
       "vue": {
         "spec": "^3.4.21",
         "installFolder": "C:\\Users\\migel\\.node-red\\projects\\ASHER-APP\\uibuilder\\node_modules\\vue",
@@ -21,6 +35,17 @@
         "homepage": "https://www.npmjs.com/search?q=vue",
         "packageUrl": "/vue",
         "url": "../uibuilder/vendor/vue/?",
+        "installedFrom": "npm",
+        "outdated": {}
+      },
+      "vuetify": {
+        "spec": "^3.5.15",
+        "installFolder": "C:\\Users\\migel\\.node-red\\projects\\ASHER-APP\\uibuilder\\node_modules\\vuetify",
+        "installedVersion": "3.5.15",
+        "estimatedEntryPoint": "?",
+        "homepage": "https://www.npmjs.com/search?q=vuetify",
+        "packageUrl": "/vuetify",
+        "url": "../uibuilder/vendor/vuetify/?",
         "installedFrom": "npm",
         "outdated": {}
       }
